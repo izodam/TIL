@@ -24,7 +24,7 @@
     - 그래서 git init과 같이 .gitignore 파일 생성이 권장된다. (그래야 실수가 덜 생긴다!!!)
 - 만약 관리되고 있는 파일을 gitignore에 등록하려면
     - 관리되고 있는 파일을 버전 관리 목록에서 제외시켜야 한다.
-        - `git rm --cached 파일혹은폴더`
+        - `git rm --cached 파일_혹은_폴더`
 
 - gitignore을 쉽게 작성하는 방법
     - [gitignore.io](https://www.toptal.com/developers/gitignore/) 에서 설정하면 꿀!
