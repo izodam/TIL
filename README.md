@@ -6,4 +6,4 @@
 
 
 ## Python
-- [data type](./Python/240115_data_type.md)
+- [data type](./Python/240116_data_type.md)
