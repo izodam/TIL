@@ -7,3 +7,4 @@
 
 ## Python
 - [data type](./Python/240116_data_type.md)
+- [함수](./Python/240117_function.md)
