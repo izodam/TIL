@@ -28,19 +28,19 @@
     - 그럼 0.1에 가깝지만 정확히 동일하지는 않음
     - 이런 과정에서 예상치 못한 결과가 나타남
     - **Floating point rounding error** (부동소숫점 에러)라고 함
-- 해결책
-        
-    ```python
-    a = 3.2 - 3.1
-    b = 1.2 - 1.1
-    
-    # 1. 임의의 작은 수 활용
-        print(abs(a-b) <= 1e-10)  # True
-    
-    # 2. math 모듈 사용
-    import math
-    print(math.isclose(a,b))    # True
-    ```
+        - 해결책
+                
+            ```python
+            a = 3.2 - 3.1
+            b = 1.2 - 1.1
+            
+            # 1. 임의의 작은 수 활용
+                print(abs(a-b) <= 1e-10)  # True
+            
+            # 2. math 모듈 사용
+            import math
+            print(math.isclose(a,b))    # True
+            ```
         
 - 지수 표현 방식
     - e 또는 E 사용
