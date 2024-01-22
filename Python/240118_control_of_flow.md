@@ -146,7 +146,7 @@ else:
         
         ```python
         if condition:
-        		pass        # 아무런 동작도 수행하지 않음
+        	pass        # 아무런 동작도 수행하지 않음
         else:
         		            # 다른 동작 수행
         ```
