@@ -98,27 +98,7 @@
 | s.istitle() | 타이틀 형식 여부 |
 - is로 시작하면 리턴은 boolean!
 
-```python
-# find(x)
-print('banana'.find('a'))       # 1 (첫 번째 위치 반환)
-print('banana'.find('z'))       # -1
-
-# index(x)
-print('banana'.index('a'))      # 1
-print('banana'.index('z'))      # ValueError: substring not found
-
-# isupper() / islower() / isalpha()
-string1 = 'HELLO'
-string2 = 'Hello'
-string3 = '123'
-
-print(string1.isupper())        # True
-print(string2.isupper())        # False
-print(string1.islower())        # False
-print(string2.islower())        # False
-print(string1.isalpha())        # True
-print(string3.isalpha())        # False
-```
+[예시 코드](./codes/string_method.py)
 
 ### ❗문자열 조작 메서드 (새 문자열 반환)
 - 조작 = 데이터 생성, 수정, 삭제.
@@ -144,39 +124,7 @@ print(string3.isalpha())        # False
     - 파이썬에서는 확장된 베커스 나우르 표기법을 사용하고 있음
     - 파이썬 ebnf 검색하면 나온당~!
 
-```python
-text = 'Hello, world!'
-new_text = text.replace('world','Python')
-print(new_text)                 # Hello, Python!
-
-text = '    Hello, world!    '
-new_text = text.strip()
-print(new_text)                 # Hello, world!
-
-text = 'Hello, world!'
-words = text.split(',')
-print(words)                    # ['Hello', ' world!']
-
-words = ['Hello', 'world!']
-text = '-'.join(words)
-print(text)                     # Hello-world!
-
-text = 'heLLo, woRld!'
-new_text1 = text.capitalize()   # Hello, world!
-new_text2 = text.title()        # Hello, World!
-new_text3 = text.upper()        # HELLO, WORLD!
-new_text4 = text.swapcase()     # HEllO, WOrLD!
-
-print(new_text1)
-print(new_text2)
-print(new_text3)
-print(new_text4)
-
-# 메서드 이어서 사용 가능
-# but 리턴값이 None인 메서드는 이어서 사용하지 못함!
-new_text = text.swapcase().replace('l','z')
-print(new_text)                 # HEzzO, WOrLD!
-```
+[예시 코드](./codes/string_method2.py)
 
 - 메서드 이어서 사용 가능
     - but 리턴값이 None인 메서드는 이어서 사용하지 못함!
@@ -198,36 +146,7 @@ print(new_text)                 # HEzzO, WOrLD!
 | **L.pop(i)** | 리스트의 인덱스 i에 있는 항목을 반환 후 제거 |
 | L.clear() | 리스트의 모든 항목 삭제 |
 
-```python
-my_list = [1, 2, 3]
-my_list.append(4)
-print(my_list)      # [1, 2, 3, 4]
-
-my_list = [1, 2, 3]
-my_list.extend([4, 5, 6])
-print(my_list)      # [1, 2, 3, 4, 5, 6]
-
-my_list = [1, 2, 3]
-my_list.insert(1, 5)
-print(my_list)      # [1, 5, 2, 3]
-
-my_list = [1, 2, 3]
-my_list.remove(2)
-print(my_list)      # [1, 3]
-
-my_list = [1, 2, 3, 4, 5]
-
-item1 = my_list.pop()
-item2 = my_list.pop(0)
-
-print(item1)        # 5
-print(item2)        # 1
-print(my_list)      # [2, 3, 4]
-
-my_list = [1, 2, 3]
-my_list.clear()
-print(my_list)      # []
-```
+[예시 코드](./codes/list_method.py)
 
 ### 리스트 탐색 및 정렬 메서드
 
@@ -238,27 +157,7 @@ print(my_list)      # []
 | L.sort() | 리스트를 정렬 (매개변수 이용가능)<br>원본 변경 / 리턴 없음 |
 | L.count(x) | 리스트에서 항목 x의 개수를 반환 |
 
-```python
-my_list = [1, 2, 3]
-index = my_list.index(2)
-print(index)        # 1
-
-my_list = [1, 2, 2, 3, 3, 3]
-count = my_list.count(3)
-print(count)        # 3
-
-my_list = [3, 2 ,1]
-my_list.sort()
-print(my_list)      # [1, 2, 3]
-
-# 내림차순
-my_list.sort(reverse=True)
-print(my_list)      # [3, 2, 1]
-
-my_list = [1, 3, 2, 8, 1, 9]
-my_list.reverse()
-print(my_list)      # [9, 1, 8, 2, 3, 1]
-```
+[예시 코드](./codes/list_method2.py)
 
 +)`sorted()` : 내장함수. 원본변경하지 않고, 리턴값이 있음.
 - 내장함수이므로 리스트가 아닌 문자열을 넣어도 정렬을 해준다!
