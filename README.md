@@ -13,3 +13,9 @@
 - [데이터 구조](./Python/240122_data_structure.md)
 - [데이터 구조_비시퀀스](./Python/240123_data_structure_nonsequence.md)
 - [해시 함수](./Python/240123_hash.md)
+- [OOP](./Python/240124_OOP.md)
+- [상속](./Python/240125_inheritance.md)
+
+
+## APS
+- [배열](./APS/240129_list1.md)
