@@ -1,5 +1,6 @@
 # TIL
 
+
 ## Git
 - [git 기본 정리](./git/240111_git기초.md)
 - [git 원격 저장소 사용](./git/240112_git_remote.md)
@@ -18,4 +19,6 @@
 
 
 ## APS
-- [배열](./APS/240129_list1.md)
+- [정렬](./APS/240129_sort.md)
+- [탐색](./APS/240130_greedy.md)
+- [2차원 배열](./APS/240131_2d_list.md)
