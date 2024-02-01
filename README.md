@@ -22,3 +22,4 @@
 - [정렬](./APS/240129_sort.md)
 - [탐색](./APS/240130_greedy.md)
 - [2차원 배열](./APS/240131_2d_list.md)
+- [검색](./APS/240201_search.md)
