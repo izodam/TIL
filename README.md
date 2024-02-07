@@ -23,3 +23,5 @@
 - [탐색](./APS/240130_greedy.md)
 - [2차원 배열](./APS/240131_2d_list.md)
 - [검색](./APS/240201_search.md)
+- [문자열](./APS/240205_string.md)
+- [스택/재귀/메모이제이션](./APS/240207_stack.md)
