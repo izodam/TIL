@@ -104,9 +104,9 @@ def power(base, exponent):
     - $C^8$ = $C^4 * C^4$ = $((C^2)^2)^2$
     - $C^n = (C^{{n-1}/2})^2 * C$
     - 즉,
-        ![Alt text](./asset/multi.png)
+        ![](./asset/multi.png)
     
-    ```python
+    ```py
     def power(base, exponent):
         if exponent == 0 or base == 0:
             return 1
