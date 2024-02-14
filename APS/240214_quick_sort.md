@@ -104,6 +104,7 @@ def power(base, exponent):
     - $C^8$ = $C^4 * C^4$ = $((C^2)^2)^2$
     - $C^n = (C^{{n-1}/2})^2 * C$
     - 즉,
+    
         ![](./asset/multi.png)
     
     ```py
