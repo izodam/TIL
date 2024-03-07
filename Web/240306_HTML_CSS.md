@@ -78,28 +78,6 @@ HTML의 주요 목적 중 하나는 **텍스트 구조와 의미**를 제공하�
     - Heading & Paragraphs : h1~6, p
     - Lists : ol, ul, li
     - Emphasis & Importance : em, strong
-    
-    ```html
-    <body>
-        <h1>Heading</h1>
-        <h2>Heading</h2>
-        <p>This is <em>emphasis</em></p>
-        <p>Hi <strong>my name</strong> is Air</p>
-        <ol>
-            <li>파이썬</li>
-            <li>알고리즘</li>
-            <li>웹</li>
-        </ol>
-        <ul>
-            <li>파이썬</li>
-            <li>알고리즘</li>
-            <li>웹</li>
-        </ul>
-    </body>
-    ```
-    
-    ![Untitled](./asset/attribute_output.png)
-    
 
 `<img src="images/sample.png" alt="sample image">` : alt 속성은 이미지를 보여줄 수 없을 때 해당 이미지를 대체할 텍스트를 명시
 
@@ -122,34 +100,6 @@ Cascading Style Sheet. 웹 페이지의 디자인과 레이아웃을 구성하�
     - head 태그 안에 style 태그에 작성
 3. 외부(external) 스타일 시트
     - 별도의 css 파일 생성 후 HTML link 태그를 사용해 불러오기
-
-```html
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    h2{
-      color: white;
-      background-color: black;
-    }
-  </style>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <h1 style="color: blue; background-color: yellow;">Inline Style</h1>
-  <h2>Internal Style</h2>
-  <h3>External Style</h3>
-</body>
-```
-
-```css
-/* style.css */
-h3 {
-  color: brown;
-}
-```
 
 internal과 external을 주로 사용함!!!!
 
@@ -176,73 +126,6 @@ HTML 요소를 선택하여 스타일을 적용할 수 있도록 하는 선택�
         - ex) `p span` 은 `<p>`안에 있는 모든 `<span>`을 선택
     - 자식 결합자(`>`) : 첫 번쨰 요소의 직계 자식만 선택
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    * {
-      color: red;
-    }
-
-    h2 {
-      color: orange;
-    }
-
-    h3, 
-    h4 {
-      color: blue;
-    }
-
-    .green {
-      color: green;
-    }
-
-    #purple {
-      color: purple;
-    }
-    .green > span {
-      font-size: 50px;
-    }
-
-    .green li {
-      color: brown;
-    }
-
-  </style>
-</head>
-
-<body>
-  <h1 class="green">Heading</h1>
-  <h2>선택자</h2>
-  <h3>연습</h3>
-  <h4>반가워요</h4>
-  <p id="purple">과목 목록</p>
-  <ul class="green">
-    <li>파이썬</li>
-    <li>알고리즘</li>
-    <li>웹
-      <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>PYTHON</li>
-      </ol>
-    </li>
-  </ul>
-  <p class="green">Lorem, <span>ipsum</span> dolor.</p>
-</body>
-
-</html>
-
-```
-
-![Untitled](./asset/css_selector_output.png)
-
 ### 명시도
 
 결과적으로 요소에 적용할 css 선언을 결정하기 위한 알고리즘
@@ -252,84 +135,18 @@ HTML 요소를 선택하여 스타일을 적용할 수 있도록 하는 선택�
 
 - Cascade(계단식) : 한 요소에 **동일한 가중치**를 가진 선택자가 적용될 때 css에서 **마지막에 나오는 선언**이 사용됨
     
-    ```css
-    h1{
-    	color: red;
-    }
-    h1 {
-    	color: purple;
-    }
-    
-    /* h1에는 purple이 적용됨 */
-    
-    /* ------------------------------ */
-    
-    .make-red {
-    	color: red;
-    }
-    h1 {
-    	color: purple;
-    }
-    
-    /* h1에 make-red 클래스가 있다면 h1은 red 적용*/
-    ```
-    
 - `!important`
     - 다른 우선순위 규칙보다 우선하여 적용하는 키워드
     - cascade 구조를 무시하고 강제로 스타일을 적용하는 방식이므로 사용을 권장하지 않음
 
 
-#### ⭐ 우선 순위
+> ⭐ 우선 순위
+> 1. Importance
+> 2. Inline 스타일
+> 3. 선택자 
+>    - id > class > 요소
+> 4. 소스 코드 선언 순서
 
-1. Importance
-2. Inline 스타일
-3. 선택자
-    - id > class > 요소
-4. 소스 코드 선언 순서
-
-<br>
-
-```html
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    h2 {
-      color: darkviolet !important;
-    }
-
-    p {
-      color: blue;
-    }
-
-    .orange {
-      color: orange;
-    }
-
-    .green {
-      color: green;
-    }
-
-    #red {
-      color: red;
-    }
-  </style>
-</head>
-
-<body>
-  <p>1</p>
-  <p class="orange">2</p>                 <!--orange-->
-  <p class="green orange">3</p>           <!--orange-->
-  <p class="orange green">4</p>           <!--green-->
-  <p id="red" class="orange">5</p>        <!--red-->
-  <h2 id="red" class="orange">6</h2>      <!--darkviolet-->
-  <p id="red" class="orange" style="color: brown;">7</p>      <!--brown-->
-  <h2 id="red" class="orange" style="color: brown;">8</h2>    <!--darkviolet-->
-</body>
-```
 
 ### 상속
 
@@ -337,28 +154,6 @@ CSS는 상속을 통해 부모 요소의 속성을 자식에게 상속해 재사
 
 - 상속 되는 속성 : text 관련 요소(font, color, text-align), opacity, visibility등
 - 상속 되지 않는 속성 : box model 관련 요소, position 관련 요소
-
-```html
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .parent {
-      color: #ff0000;             /* 상속 되는 속성*/
-      border: 1px solid black;    /* 상속 되지 않는 속성*/
-    }
-  </style>
-</head>
-
-<body>
-  <ul class="parent">
-    <li class="child">Hello</li>
-    <li class="child">Bye</li>
-  </ul>
-</body>
-```
-
 
 ## 참고
 

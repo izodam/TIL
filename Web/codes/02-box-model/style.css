@@ -1,0 +1,17 @@
+* {
+    /* 4개 - 상 우 하 좌 (시계방향) */
+    margin: 10px 20px 30px 40px;
+    padding: 10px 20px 30px 40px;
+
+    /* 3개 - 상 좌우 하 */
+    margin: 10px 20px 30px;
+    padding: 10px 20px 30px;
+
+    /* 2개 - 상하 좌우 */
+    margin: 10px 20px;
+    padding: 10px 20px;
+
+    /* 1개 - 공통 */
+    margin: 10px;
+    padding: 10px;
+}
