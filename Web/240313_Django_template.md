@@ -65,12 +65,13 @@ HTTP 요청을 서버에 보내는 가장 편리한 방법
     form의 핵심 속성 2가지
     
     - action
-        - 입력 데이터가 전송될 URL을 지정(목적지)
+        - 입력 데이터가 전송될 URL을 지정(**목적지**)
         - 이 속성을 지정하지 않으면 데이터는 현재 form이 있는 페이지의 URL로 보내짐
     - method
         - 데이터를 어떤 방식으로 보낼 것인지 정의
         - 데이터의 HTTP request methods(GET, POST)를 지정
-        - GET은 URL에 노출되고
+        - 설정하지 않으면 기본값은 GET
+        - GET은 URL에 전달 한 값이 모두 노출되고
         - POST는 노출되지 않는다 → 로그인에 사용하겠져??
 - ‘input’ element
     - 사용자의 데이터를 입력 받을 수 있는 요소
@@ -78,11 +79,14 @@ HTTP 요청을 서버에 보내는 가장 편리한 방법
 - ‘name’ attribute
     - 입력한 데이터에 붙이는 이름(key)
     - 데이터를 제출했을 때 서버는 name 속성에 설정된 값을 통해서만 사용자가 입력한 데이터에 접근할 수 있음
+    - 없으면 사용자의 이름을 저장하지 않음 
+        - 저장을 해야 사용 가능
+        - 즉, 무조건 설정해줘야 함
 
 - Query String Parameters
     - 사용자의 입력 데이터를 URL 주소에 파라미터를 통해 서버로 보내는 방법
     - 문자열은 앰퍼샌드(&)로 연결된 key=value쌍으로 구성되며, 기본 URL과는 물음표(?)로 구분됨
-    - ex) `http://host:port/path**?key=value&key=value**`
+    - ex) `http://host:port/path?key=value&key=value`
     
 
 ### form 활용
