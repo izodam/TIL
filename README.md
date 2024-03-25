@@ -43,3 +43,4 @@
 - [HTML/CSS](./Web/240306_HTML_CSS.md)
 - [CSS box model](./Web/240307_CSS.md#css-box-model)
 - [CSS flexbox](./Web/240307_CSS.md#css-flexbox)
+- [Django](./Web/240312_Django.md)
