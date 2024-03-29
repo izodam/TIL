@@ -1,24 +1,24 @@
 # TIL
 
-
 ## Git
+
 - [git 기본 정리](./git/240111_git기초.md)
 - [git 원격 저장소 사용](./git/240112_git_remote.md)
 
-
 ## Python
+
 - [data type](./Python/240116_data_type.md)
 - [함수](./Python/240117_function.md)
 - [모듈](./Python/240118_module.md)
 - [제어문](./Python/240118_control_of_flow.md)
 - [데이터 구조](./Python/240122_data_structure.md)
-- [데이터 구조_비시퀀스](./Python/240123_data_structure_nonsequence.md)
+- [데이터 구조\_비시퀀스](./Python/240123_data_structure_nonsequence.md)
 - [해시 함수](./Python/240123_hash.md)
 - [OOP](./Python/240124_OOP.md)
 - [상속](./Python/240125_inheritance.md)
 
-
 ## APS
+
 - [정렬](./APS/240129_sort.md#정렬)
 - [그리디 알고리즘](./APS/240130_greedy.md#탐욕greedy-알고리즘)
 - [2차원 배열](./APS/240131_2d_list.md)
@@ -38,9 +38,22 @@
 - [tree](./APS/240220_tree.md)
 - [이진 탐색 트리](./APS/240221_bst_heap.md)
 
-
 ## Web
+
+### HTML/CSS (Bootstrap)
+
 - [HTML/CSS](./Web/240306_HTML_CSS.md)
 - [CSS box model](./Web/240307_CSS.md#css-box-model)
 - [CSS flexbox](./Web/240307_CSS.md#css-flexbox)
+- [Bootstrap](./Web/240308_Bootstrap.md)
+
+---
+
+### Django
+
 - [Django](./Web/240312_Django.md)
+- [Django Template](./Web/240314_Django_Model.md)
+- [Django ORM](./Web/240325_Django_ORM.md)
+- [Django Form](./Web/240327_Django_form.md)
+- [Django Static](./Web/240328_Static.md)
+- [Django Authentication System](./Web/240329_Authentication_System.md)
