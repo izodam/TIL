@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jupyternotebooks,windows,django,pycharm,node,vue
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode,jupyternotebooks,windows,django,pycharm,node,vue
 
+### Obsidian ###
+# config dir
+.obsidian/
+
 ### Django ###
 *.log
 *.pot
