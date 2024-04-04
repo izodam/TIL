@@ -57,5 +57,10 @@
 - [Django Form](./Web/240327_Django_form.md)
 - [Django Static](./Web/240328_Static.md)
 - [Django Authentication System](./Web/240329_Authentication_System.md)
--
--
+
+---
+
+### DB
+
+- [SQL](./DB/240402_SQL.md)
+- [N:1](./DB/240403_N1.md)
