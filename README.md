@@ -57,6 +57,7 @@
 - [Django Form](./Web/240327_Django_form.md)
 - [Django Static](./Web/240328_Static.md)
 - [Django Authentication System](./Web/240329_Authentication_System.md)
+- [REST API](./Web/240411_REST_API.md)
 
 ---
 
