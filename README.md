@@ -67,3 +67,8 @@
 - [SQL](./DB/240402_SQL.md)
 - [N:1](./DB/240403_N1.md)
 - [M:N](./DB/240408_Many_to_many_relationships.md)
+
+### JavaScript
+
+- [JavaScript DOS](./JavaScript/240416_DOS.md)
+- [Basic Syntax](./JavaScript/240417_Basic_Syntax.md)
