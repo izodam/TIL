@@ -72,3 +72,4 @@
 
 - [JavaScript DOS](./JavaScript/240416_DOS.md)
 - [Basic Syntax](./JavaScript/240417_Basic_Syntax.md)
+- [Reference Type](./JavaScript/240418_Reference_Type.md)
