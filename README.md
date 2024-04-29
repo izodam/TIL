@@ -48,17 +48,17 @@
 - [CSS flexbox](./Web/240307_CSS.md#css-flexbox)
 - [Bootstrap](./Web/240308_Bootstrap.md)
 
------
+---
 
 ### Django
 
-- [Django](./Web/240312_Django.md)
-- [Django Template](./Web/240314_Django_Model.md)
-- [Django ORM](./Web/240325_Django_ORM.md)
-- [Django Form](./Web/240327_Django_form.md)
-- [Django Static](./Web/240328_Static.md)
-- [Django Authentication System](./Web/240329_Authentication_System.md)
-- [REST API](./Web/240411_REST_API.md)
+- [Django](./Django/240312_Django.md)
+- [Django Template](./Django/240314_Django_Model.md)
+- [Django ORM](./Django/240325_Django_ORM.md)
+- [Django Form](./Django/240327_Django_form.md)
+- [Django Static](./Django/240328_Static.md)
+- [Django Authentication System](./Django/240329_Authentication_System.md)
+- [REST API](./Django/240411_REST_API.md)
 
 ---
 
@@ -73,4 +73,5 @@
 - [JavaScript DOS](./JavaScript/240416_DOS.md)
 - [Basic Syntax](./JavaScript/240417_Basic_Syntax.md)
 - [Reference Type](./JavaScript/240418_Reference_Type.md)
-
+- [Event](./JavaScript/240422_Event.md)
+- [Asynchronous](./JavaScript/240423_Asynchronous.md)
