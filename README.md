@@ -83,3 +83,4 @@
 ### Vue
 
 - [Basic Syntax](./Vue/240429_Basic_Syntax.md)
+- [Single File Component](./Vue/240502single_file_components.md)
