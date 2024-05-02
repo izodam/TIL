@@ -68,6 +68,8 @@
 - [N:1](./DB/240403_N1.md)
 - [M:N](./DB/240408_Many_to_many_relationships.md)
 
+---
+
 ### JavaScript
 
 - [JavaScript DOS](./JavaScript/240416_DOS.md)
@@ -75,3 +77,9 @@
 - [Reference Type](./JavaScript/240418_Reference_Type.md)
 - [Event](./JavaScript/240422_Event.md)
 - [Asynchronous](./JavaScript/240423_Asynchronous.md)
+
+---
+
+### Vue
+
+- [Basic Syntax](./Vue/240429_Basic_Syntax.md)
